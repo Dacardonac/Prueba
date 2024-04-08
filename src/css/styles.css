@@ -1,3 +1,9 @@
+/*
+Nombre Completo: Daniel Alejandro Cano Cardona 
+Clan: Gates
+fecha: 08 / 04 / 2024 
+*/
+
 :root {
     --negro: #000000;
     --blanco: #FFFFFF;    
@@ -14,6 +20,7 @@ body {
     background-image: url(/public/img/background-page.webp);
     background-size: cover;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    letter-spacing: 1.2px;
 }
 
 .header {
@@ -59,17 +66,62 @@ body {
 .categorias {
     text-align: center;
     display: flex;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-wrap: wrap;
 
     & img {
         width: 300px;
         height: 300px;
+        cursor: pointer;
     }
 
     & figure {
-        display: flex;
-        flex-direction: column;
+        width: 50%;
+        padding: 50px;
+    }
+
+    & p {
+        margin: 10px;
     }
 }
 
+.mercancia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    & .articulo {
+        text-align: center;
+        color: var(--blanco);
 
+        & img {
+            background-color: var(--blanco);
+            width: 300px;
+            height: 250px;
+            margin: 15px;
+        }
+        
+        & a {
+            color: var(--blanco);
+            font-size: 1.1rem;
+        }
+
+        & p {
+            margin: 15px;
+        }
+
+        & button  {
+            padding: 10px;
+            border-radius: 1rem;
+            margin: 15px;
+
+            & a {
+                color: var(--negro);
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+    }
+}
