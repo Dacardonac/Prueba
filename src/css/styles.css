@@ -4,12 +4,11 @@ Clan: Gates
 fecha: 08 / 04 / 2024 
 */
 
-
 /* Variable de los colores utilizados */
 
 :root {
     --negro: #000000;
-    --blanco: #FFFFFF;
+    --blanco: #F1F1F1;
     --gris: #818181;
 }
 
@@ -22,24 +21,25 @@ fecha: 08 / 04 / 2024
     box-sizing: border-box;
 }
 
+/* Fuente y espciado de letra */
+
 body {
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     letter-spacing: 1.2px;
 }
 
-#video_background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+/* Video - Background de la pagina */
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden;
+    z-index: -1;
 }
 
-.header {
+.header { /* Estilos de la cabecera de la pagina */
     color: var(--blanco);
     display: flex;
     align-items: center;
@@ -69,6 +69,8 @@ body {
         cursor: pointer;
     }
 }
+
+/* Estilos del main (Contenido) */
 
 .placebo-home {
     display: flex;
@@ -145,7 +147,7 @@ body {
     }
 }
 
-/* Codigo re utilizado de la mercacncia ya que las secciones son similares */
+/* Codigo re utilizado de la mercancia ya que las secciones son similares */
 
 .music {
     margin: 100px 5px;
@@ -258,7 +260,7 @@ button:hover {
     }
 }
 
-footer {
+footer { /* Estilos del pie de pagina */ 
 
     & .redes-sociales {
         margin-top: 100px;
@@ -270,7 +272,7 @@ footer {
             margin: 10px;
         }
     }
-    
+  
     & .derechos {
         margin: 20px;
         color: var(--blanco);

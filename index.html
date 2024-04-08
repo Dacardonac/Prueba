@@ -4,10 +4,10 @@ Nombre Completo: Daniel Alejandro Cano Cardona
 Clan: Gates
 fecha: 08 / 04 / 2024 -->
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta Datos y links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -29,9 +29,12 @@ fecha: 08 / 04 / 2024 -->
     <title>Placebo</title>
 </head>
 <body>
-    <video src="./public/img/background-glitch.mp4" id="video_background" autoplay loop></video>
-    <header class="header">
-        <nav>
+    <!-- La etiqueta video es independiente a el header, el main o el footer ya que es el fondo de la pagina y abarca todo -->
+    <video class="video" muted loop autoplay>
+        <source src="./public/img/background-glitch.mp4" type="video/mp4">
+    </video>
+    <header class="header"> <!-- Cabecera de la pagina -->
+        <nav> <!-- Barra de la navegación -->
             <a href="index.html"><img src="./public/img/placebo-logotype.webp" alt="Logo de la banda Placebo"></a>
             <a href="#">Listen</a>
             <a href="#">Watch</a>
@@ -45,12 +48,12 @@ fecha: 08 / 04 / 2024 -->
             <i class="bi bi-search"></i>
             <i class="bi bi-cart"></i>
         </div>
-    </header>
-    <main>
+    </header> <!-- Fin de la cabecera de la pagina -->
+    <main> <!-- Seccion principal de la pagina (Contenido) -->
         <figure class="placebo-home">
             <img src="./public/img/PLACEBO_Home (2).webp" alt="Banda Placebo">
         </figure>
-        <section class="categorias">
+        <section class="categorias"> <!-- Galeria de imagenes --> <!-- Sección #1 -->
             <figure>
                 <img src="./public/img/watch.webp" alt="">
                 <p>Watch</p>
@@ -68,7 +71,7 @@ fecha: 08 / 04 / 2024 -->
                 <p>Listen</p>
             </figure>
         </section>
-        <section class="mercancia" id="merch">
+        <section class="mercancia" id="merch"> <!-- Cards de la Mercancia --> <!-- Sección #2 -->
             <article class="articulo">
                 <img src="./public/img/silhouettes tee.webp" alt="Imagen de un producto de Placebo">
                 <a href="#"><h3>Silhouettes Tee</h3></a>
@@ -102,7 +105,7 @@ fecha: 08 / 04 / 2024 -->
                 </button>
             </article>
         </section>
-        <section class="music" id="music-store">
+        <section class="music" id="music-store"> <!-- Cards de la musica --> <!-- Sección #3 -->
             <article class="articulo">
                 <img src="./public/img/1-placebo-live-box.webp" alt="Imagen de un album de Placebo">
                 <a href="#"><h3>Placebo Live - Boxset</h3></a>
@@ -136,7 +139,7 @@ fecha: 08 / 04 / 2024 -->
                 </button>
             </article>
         </section>
-        <section class="conciertos">
+        <section class="conciertos"> <!-- Listado de Conciertos --> <!-- Sección #4 -->
                 <h2>Playing near you</h2>
                 <span><p>Trackto get concert, live stream and tour updates</p></span>
             <article>
@@ -169,31 +172,31 @@ fecha: 08 / 04 / 2024 -->
                 <span><p>Get updates on new shows, new music, and more.</p></span>
                 <a href="#"><button>Follow</button></a>
         </section>
-        <section class="sign-up" id="sign">
+        <section class="sign-up" id="sign"> <!-- Sección de subscripcion --> <!-- Sección #5 -->
             <h2>Subscribe to our newletter</h2>
             <p>Stay in the loop with our latest product and music releases. Sign up now tobe the first to know and get exclusive access</p>
             <a href="#"><button>Sign Up</button></a>
         </section>
-    </main>
-    <footer>
-        <div class="redes-sociales">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-apple"></i>
-            <i class="bi bi-spotify"></i>
+    </main> <!-- Fin de la seccion principal de la pagina (Contenido) -->
+    <footer> <!-- Pie de pagina -->
+        <div class="redes-sociales"> <!-- Iconos de las redes sociales de la banda -->
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-apple"></i></a>
+            <a href="#"><i class="bi bi-spotify"></i></a>
         </div>
         <div class="derechos">
-            <p>"&copy; 2024,"Placebo- Powered by BSI Merch</p>
-            <ul>
+            <p>"&copy; 2024,"Placebo- Powered by BSI Merch</p> <!-- Copy de la pagina -->
+            <ul> <!-- Lista de las politicas, terminos y condiciones -->
                 <li>Refund policy</li>
                 <li>Privacy policy</li>
-                <li> Terms of service</li>
+                <li>Terms of service</li>
                 <li>Contact</li>
                 <li>Help & FAQS</li>
                 <li>Sign Up</li>
             </ul>
         </div>
-    </footer>
+    </footer> <!-- Fin del pie de pagina -->
 </body>
 </html>
