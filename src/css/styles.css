@@ -4,10 +4,16 @@ Clan: Gates
 fecha: 08 / 04 / 2024 
 */
 
+
+/* Variable de los colores utilizados */
+
 :root {
     --negro: #000000;
-    --blanco: #FFFFFF;    
+    --blanco: #FFFFFF;
+    --gris: #818181;
 }
+
+/* Restablecimiento de valores por defecto del navegador */
 
 * {
     padding: 0;
@@ -17,10 +23,20 @@ fecha: 08 / 04 / 2024
 }
 
 body {
-    background-image: url(/public/img/background-page.webp);
-    background-size: cover;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     letter-spacing: 1.2px;
+}
+
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
 }
 
 .header {
@@ -75,6 +91,7 @@ body {
         width: 300px;
         height: 300px;
         cursor: pointer;
+        border-radius: 10px;
     }
 
     & figure {
@@ -88,6 +105,7 @@ body {
 }
 
 .mercancia {
+    margin: 100px 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -101,6 +119,7 @@ body {
             width: 300px;
             height: 250px;
             margin: 15px;
+            border-radius: 10px;
         }
         
         & a {
@@ -122,6 +141,148 @@ body {
                 font-weight: bold;
                 font-size: 1rem;
             }
+        }
+    }
+}
+
+/* Codigo re utilizado de la mercacncia ya que las secciones son similares */
+
+.music {
+    margin: 100px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .articulo {
+        text-align: center;
+        color: var(--blanco);
+
+        & img {
+            background-color: var(--blanco);
+            width: 300px;
+            height: 250px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+        
+        & a {
+            color: var(--blanco);
+            font-size: 1.1rem;
+        }
+
+        & p {
+            margin: 15px;
+        }
+
+        & button  {
+            padding: 10px;
+            margin: 15px;
+
+            & a {
+                color: var(--negro);
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* CSS general para los botones (Se modifican de acuerdo a lo requerido en la seccion) */
+
+button {
+    transition: 0.9s ease;
+    height: 40px;
+    border-radius: 1.4rem;
+    border: 1px solid var(--negro);
+}
+
+button:hover {
+    background-color: var(--gris);
+    border-right: 5px solid blue;
+    border-left: 5px solid red ;
+    transition: 0.9s ease;
+    height: 45px;
+    cursor: pointer;
+}
+
+.conciertos {
+    color: var(--blanco);
+    text-align: center;
+
+    & span {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    & article {
+        margin: 50px 0px;
+    }
+
+    & div {
+        border: 1.5px solid var(--blanco);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    & button {
+        width: 100px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    & a button {
+        margin: 15px;
+    }
+}
+
+.sign-up {
+    margin-top: 50px;
+    color: var(--blanco);
+    text-align: center;
+    font-weight: bold;
+
+    & h2 {
+        margin: 20px;
+    }
+
+    & button {
+        width: 100px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    & a button {
+        margin: 15px;
+    }
+}
+
+footer {
+
+    & .redes-sociales {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--blanco);
+    
+        & i {
+            margin: 10px;
+        }
+    }
+    
+    & .derechos {
+        margin: 20px;
+        color: var(--blanco);
+        display: flex;
+        justify-content: space-around;
+    
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 50px;
+    
         }
     }
 }
